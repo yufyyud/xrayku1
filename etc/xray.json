@@ -48,5 +48,19 @@
             {"type": "field","outboundTag": "sockstor","domain": ["geosite:tor"]},
             {"type": "field","outboundTag": "blocked","domain": ["geosite:category-ads-all"]}
         ]
-    }
+    },
+    {
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "8.8.4.4",
+      "localhost"
+    ],
+    "queryStrategy": "UseIP",
+    "disableCache": false,
+    "disableFallback": false,
+    "disableFallbackIfMatch": false,
+    "tag": "dns_inbound"
+  }
+}
 }
